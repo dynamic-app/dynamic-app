@@ -1,0 +1,20 @@
+{
+  "name": "dynamic-app-core",
+  "version": "0.5.0",
+  "description": "Application Flow Manager tools.",
+  "main": "dynamic-app.js",
+  "author": "Aron Stein",
+  "license": "MIT",
+  "homepage": "https://github.com/dynamic-app/dynamic-app",
+  "bugs": "https://github.com/dynamic-app/dynamic-app/issues",
+  "keywords": [
+    "dynamic-app"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dynamic-app/dynamic-app.git"
+  }
+}

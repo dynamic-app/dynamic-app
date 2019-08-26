@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Dynamic app - example</title>
+</head>
+
+<body>
+  <app-content></app-content>
+  <script src="./dynamic-app.js"></script>
+  <script>
+    var services = {
+      MyService: function() {
+        console.log('"MyService" is started!');
+      },
+    };
+
+    var widgets = {
+      helloWorld: 'Hello world !!!'
+    };
+
+    var containers = {
+      home: {
+        route: location.pathname,
+        services: {
+          serviceId: 'MyService',
+        },
+        widgets: {
+          first: {
+            widgetId: 'helloWorld',
+            includeIn: 'body',
+          },
+        },
+      },
+    };
+
+    DynamicApp.setConfig({
+      services,
+      widgets,
+      containers
+    });
+
+    DynamicApp.flash();
+  </script>
+</body>
+
+</html>
