@@ -1,6 +1,6 @@
 {
   "name": "dynamic-app-core",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Application Flow Manager tools.",
   "main": "dynamic-app.js",
   "author": "Aron Stein",

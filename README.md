@@ -83,6 +83,9 @@ DynamicApp.setConfig({
       services: {
         [item_id]: {
           serviceId: '[service_id]',
+          config: {
+            [prop]: data || '"My text."' || 'services.[service_item].get(queryParams.[my_param])',
+          }
         },
       },
      
@@ -90,6 +93,9 @@ DynamicApp.setConfig({
         [item_id]: {
           widgetId: '[widget_id]',
           [includeIn||includeBefore||includeAfter]: '[css selectors]',
+          config: {
+            [prop]: data || '"My text."' || 'services.[service_item].get(queryParams.[my_param])',
+          }
         },
       },
     },
